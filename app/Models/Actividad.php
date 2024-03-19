@@ -11,5 +11,13 @@ class Actividad extends Model
 
     protected $table = 'actividades';
 
-    // Aquí puedes definir las propiedades fillable, hidden, timestamps, etc.
+    protected $fillable = [
+        'nombre',
+        'descripcion',
+        'fecha',
+        'hora',
+         // Agrega aquí los nuevos campos si los has añadido a la tabla
+    ];
+
+    // Si tienes relaciones con otros modelos, las definirías aquí
 }
